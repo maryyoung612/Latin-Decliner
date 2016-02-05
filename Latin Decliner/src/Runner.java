@@ -53,7 +53,7 @@ public class Runner
 				Fifth.isMasculineFif();		
 				}
 			}
-public static void findRoot()
+/*public static void findRoot()
 	{
 	String temp="";
 	for(int i=0; i<Runner.input.length()-1;i++)
@@ -61,5 +61,5 @@ public static void findRoot()
 		temp = Runner.input.substring(i,i-2);
 		}
 	String root=temp;
-	}
+	}*/
 	}
