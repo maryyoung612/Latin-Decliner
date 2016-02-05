@@ -1,12 +1,23 @@
 public class First extends Declension
 	{
-	First()
+	First(String n, String r)
 		{
 		name="first";
-		for(int i=0; i<Runner.input.length();i++)
+		String temp="";
+		for(int i=0; i<Runner.input.length()-1;i++)
 			{
-			ending=Runner.input.substring(0,i)+Runner.input.substring(i-2);
+			temp = Runner.input.substring(i,i-2);
 			}
-		
+		root=temp;
+		}
+	public static void isFemineFi()
+		{
+		System.out.println("First Declension Femine");
+		System.out.println(root+"a"+ "         "+root+"ae");
+		System.out.println(root+"ae"+ "        "+root+"arum");
+		System.out.println(root+"ae"+ "        "+root+"is");
+		System.out.println(root+"am"+ "        "+root+"as");
+		System.out.println(root+"a"+ "         "+root+"is");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}
 	}

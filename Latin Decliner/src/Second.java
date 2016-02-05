@@ -3,26 +3,25 @@ public class Second extends Declension
 	Second()
 		{
 		name="second";
-		for(int i=0; i<Runner.input.length();i++)
-			{
-			ending=Runner.input.substring(0,i)+Runner.input.substring(i-2);
-			}
-		
 		}
-	public static void isMasculine()
+	public static void isMasculineS()
 		{
 		System.out.println("Second Declension Masculine");
-		System.out.println(get.root(1)+"us"+ "         "+get.root()+"");
-		System.out.println(get.root()+"i"+ "        "+get.root()+"atis");
-		System.out.println(get.root()+"o"+ "        "+get.root()+"ant");
+		System.out.println(root+"us"+ "         "+root+"i");
+		System.out.println(root+"i"+ "        "+root+"orum");
+		System.out.println(root+"o"+ "        "+root+"is");
+		System.out.println(root+"um"+ "        "+root+"os");
+		System.out.println(root+"o"+ "         "+root+"is");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}
-	public static void isNeuter()
+	public static void isNeuterS()
 		{
 		System.out.println("Second Declension Neuter");
-		System.out.println(get.root()+"us"+ "         "+get.root()+"");
-		System.out.println(get.root()+"i"+ "        "+get.root()+"atis");
-		System.out.println(get.root()+"o"+ "        "+get.root()+"ant");
+		System.out.println(root+"um"+ "         "+root+"a");
+		System.out.println(root+"i"+ "        "+root+"orum");
+		System.out.println(root+"o"+ "        "+root+"is");
+		System.out.println(root+"um"+ "        "+root+"a");
+		System.out.println(root+"o"+ "        "+root+"is");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		}
 	}

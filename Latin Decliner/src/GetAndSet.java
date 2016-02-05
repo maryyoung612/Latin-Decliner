@@ -3,13 +3,11 @@ public class GetAndSet
 	private String translation;
 	private String type;
 	private String cases;
-	private String root;
-	public GetAndSet(String t, String ty, String c, String r)
+	public GetAndSet(String t, String ty, String c)
 	 {
 	 translation=t;
 	 type=ty;
 	 cases=c;
-	 root=r;
 	 }
 	public String getTranslation()
 		{
@@ -35,12 +33,5 @@ public class GetAndSet
 		{
 			this.cases = cases;
 		}
-	public String getRoot()
-		{
-			return root;
-		}
-	public void setRoot(String root)
-		{
-			this.root = root;
-		}
+
 	}

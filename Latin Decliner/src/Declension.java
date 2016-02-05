@@ -1,5 +1,5 @@
 public abstract class Declension
 	{
 	protected String name;
-	protected String ending;
+	protected static String root;
 	}
