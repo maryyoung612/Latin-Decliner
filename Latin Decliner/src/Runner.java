@@ -1,16 +1,17 @@
 import java.util.Scanner;
 public class Runner
-	{
+{
 		public static String input;
 		public static int de;
+		public static String root;
 		public static void main(String[] args)
 			{
 			System.out.println("Please enter the nominative singular of the word");
 			Scanner userInput = new Scanner(System.in);
 			input=userInput.nextLine();
-			//findRoot();
 			System.out.println("Please enter the # of the decension");
 			de=userInput.nextInt();
+			findRoot();
 			if(de==1)
 				{
 				First.isFemineFi();
@@ -53,13 +54,15 @@ public class Runner
 				Fifth.isMasculineFif();		
 				}
 			}
-/*public static void findRoot()
+public static void findRoot()
 	{
-	String temp="";
-	for(int i=0; i<Runner.input.length()-1;i++)
+	if(de==1)
 		{
-		temp = Runner.input.substring(i,i-2);
+		root = Runner.input.substring(0,Runner.input.length()-1);
 		}
-	String root=temp;
-	}*/
+	else
+		{
+		root = Runner.input.substring(0,Runner.input.length()-2);
+		}
 	}
+}
