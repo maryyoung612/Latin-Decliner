@@ -1,4 +1,4 @@
 public interface BetterBehavior
 	{
-	public void isCom();
+	public void comIs();
 	}

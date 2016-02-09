@@ -3,7 +3,8 @@ public class First extends Declension
 	First()
 		{
 		name="First";
-		Behavior= (BetterBehavior) new Comparative();
+		Behavior= (BetterBehavior) new notCom();
+		Behavior2= (BestBehavior) new notSup();
 		}
 	public static void isFemineFi()
 		{

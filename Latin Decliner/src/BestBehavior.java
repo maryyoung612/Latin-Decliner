@@ -1,4 +1,4 @@
 public interface BestBehavior
 	{
-	public void isSup();
+	public void supIs();
 	}

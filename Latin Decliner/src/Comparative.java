@@ -1,7 +1,15 @@
-public class Comparative implements BetterBehavior
+public class Comparative extends Declension
 	{
-	public void isCom()
+	Comparative()
 		{
-		System.out.println("This is Comparative!!");
+		name="Comparative";
+		Behavior= (BetterBehavior) new isCom();
+		Behavior2= (BestBehavior) new notSup();
+		}
+	public static void change()
+		{
+		System.out.println("Hello");
+		Array.makeDeArray();
+		System.exit(0);
 		}
 	}

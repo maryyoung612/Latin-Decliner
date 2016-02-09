@@ -3,8 +3,8 @@ public class Second extends Declension
 	Second()
 		{
 		name="Second";
-		Behavior= (BetterBehavior) new Comparative();
-		Behavior2= (BestBehavior) new Superlative();
+		Behavior= (BetterBehavior) new notCom();
+		Behavior2= (BestBehavior) new notSup();
 		}
 	public static void isMasculineS()
 		{

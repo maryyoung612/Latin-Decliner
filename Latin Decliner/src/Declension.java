@@ -1,6 +1,6 @@
 public abstract class Declension
 	{
 	protected String name;
-	protected BetterBehavior Behavior;
+	protected static BetterBehavior Behavior;
 	protected BestBehavior Behavior2;
 	}
