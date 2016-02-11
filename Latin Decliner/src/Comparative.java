@@ -8,8 +8,7 @@ public class Comparative extends Declension
 		}
 	public static void change()
 		{
-		System.out.println("Hello");
-		Array.makeDeArray();
+		Array.makeComArray();
 		System.exit(0);
 		}
 	}

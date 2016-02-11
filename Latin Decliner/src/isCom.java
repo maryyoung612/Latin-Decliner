@@ -1,6 +1,6 @@
 public class isCom implements BetterBehavior
 	{
-	public void isCom()
+	public void comIs()
 		{
 		System.out.println("This is comparative.");
 		}

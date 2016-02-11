@@ -1,7 +1,7 @@
 public class isSup implements BestBehavior
 	{
-	public void isSup()
+	public void supIs()
 		{
-		System.out.println("This is superlative.");
+			System.out.println("This is superlative.");
 		}
 	}

@@ -2,20 +2,27 @@ import java.util.ArrayList;
 
 public class Array
 	{
-	static ArrayList <GetAndSet> q = new ArrayList <GetAndSet>();
-	static ArrayList <Declension> decl= new ArrayList <Declension>();
+	static ArrayList <Word> q = new ArrayList <Word>();
+	static ArrayList <Declension> s= new ArrayList <Declension>();
+	static ArrayList <Declension> c= new ArrayList <Declension>();
 	public static void makeArray()
 		{
-		q.add(new GetAndSet("","",""));
+		q.add(new Word("", "", ""));
 		}
-	public static void makeDeArray()
+	public static void makeSupArray()
 		{
-		decl.add(new Comparative());
-		decl.add(new Superlative());
-		for(Declension fred:decl)
+		s.add(new Superlative());
+		for(Declension fred:s)
 			{
-			fred.Behavior.isCom();
-			fred.Behavior2.isSup();
+			fred.Behavior2.supIs();
+			}
+		}
+	public static void makeComArray()
+		{
+		c.add(new Comparative());
+		for(Declension fred:c)
+			{
+			fred.Behavior.comIs();
 			}
 		}
 	}

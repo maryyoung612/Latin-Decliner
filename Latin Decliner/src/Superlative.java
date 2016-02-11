@@ -8,9 +8,7 @@ public class Superlative extends Declension
 		}
 	public static void change()
 		{
-		System.out.println("It's me");
-		System.out.print(Behavior.comIs());
-		Array.makeDeArray();
+		Array.makeSupArray();
 		System.exit(0);
 		}
 	}
