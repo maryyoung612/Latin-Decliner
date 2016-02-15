@@ -8,17 +8,14 @@ public class Array
 	{
 	static ArrayList <Declension> s= new ArrayList <Declension>();
 	static ArrayList <Declension> c= new ArrayList <Declension>();
-	
+	static ArrayList <Word> importW = new ArrayList <Word>();
 	public static void makeArray() throws IOException
 		{
 		Scanner file = new Scanner(new File("Dictionary.txt"));
-		while(File.hasNext())
+			while(file.hasNext())
 			{
-				
+			importW.add(new Word(file.next(),file.next(),file.next(),file.next(),file.next()));
 			}
-		ArrayList <Word> importW = new ArrayList <Word>();
-		importW.add(new Word("","",""));
-		importW.add(new Word("","",""));
 		}
 	public static void makeSupArray()
 		{

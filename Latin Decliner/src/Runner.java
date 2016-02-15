@@ -1,86 +1,92 @@
+import java.io.IOException;
 import java.util.Scanner;
 public class Runner
 {
 		public static String input;
 		public static int de;
 		public static String root;
-		public static void main(String[] args)
+		public static void main(String[] args) throws IOException
 			{
+			Array.makeArray();
 			System.out.println("Please enter the nominative singular of the word");
 			Scanner userInput = new Scanner(System.in);
 			input=userInput.nextLine();
-			if(input.endsWith("ior"))
+			findSupCom();
+			for(int i=0; i<Array.importW.size()-1; i++)
 				{
-				Comparative.change();
-				}
-			if(input.endsWith("ius"))
-				{
-				Comparative.change();
-				}
-			if(input.endsWith("issimus"))
-				{
-				Superlative.change();
-				}
-			if(input.endsWith("issime"))
-				{
-				Superlative.change();
-				}
-			System.out.println("Please enter the # of the decension");
-			de=userInput.nextInt();
-			findRoot();
-			
-			
-			if(de==1)
-				{
-				First.isFemineFi();
-				}
-			if(de==2)
-				{
-				if(input.endsWith("us"))
+				if(Array.importW.get(i).getLatinWord1().equals(input))
 					{
-					Second.isMasculineS();
-					}
-				else
+					System.out.println(Array.importW.get(i));
+					
+					if(Array.importW.get(i).getDelNum().equals("first"))
 					{
-					Second.isNeuterS();
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						First.isFemineFi();
 					}
-				}
-			if(de==3)
-				{
-				if(input.endsWith("us"))
+					if(Array.importW.get(i).getDelNum().equals("second"))
 					{
-					Third.isGenderT();
+						if(Array.importW.get(i).getGender().equals("m"))
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord1().length()-2);
+						Second.isMasculineS();
+						}
+						else
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord1().length()-2);
+						Second.isNeuterS();
+						}
 					}
-				else
+					if(Array.importW.get(i).getDelNum().equals("third"))
 					{
-					Third.isNeuterT();
+						if(Array.importW.get(i).getGender().equals("m")||Array.importW.get(i).getGender().equals("f"))
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						Third.isGenderT();
+						}
+						else
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						Third.isNeuterT();
+						}
 					}
-				}
-			if(de==4)
-				{
-				if(input.endsWith("us"))
+					if(Array.importW.get(i).getDelNum().equals("fourth"))
 					{
-					Fourth.isMasculineFo();
+						if(Array.importW.get(i).getGender().equals("m")||Array.importW.get(i).getGender().equals("f"))
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						Fourth.isMasculineFo();
+						}
+						else
+						{
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						Fourth.isNeuterFo();
+						}
 					}
-				else
+					if(Array.importW.get(i).getDelNum().equals("fifth"))
 					{
-					Fourth.isNeuterFo();
+						root = Array.importW.get(i).getLatinWord2().substring(0,Array.importW.get(i).getLatinWord2().length()-2);
+						Fifth.isFif();		
 					}
-				}
-			if(de==5)
-				{
-				Fifth.isMasculineFif();		
+					}
 				}
 			}
-public static void findRoot()
+public static void findSupCom()
 	{
-	if(de==1)
+	if(input.endsWith("ior"))
 		{
-		root = Runner.input.substring(0,Runner.input.length()-1);
+		Comparative.change();
 		}
-	else
+	if(input.endsWith("ius"))
 		{
-		root = Runner.input.substring(0,Runner.input.length()-2);
+		Comparative.change();
+		}
+	if(input.endsWith("issimus"))
+		{
+		Superlative.change();
+		}
+	if(input.endsWith("issime"))
+		{
+		Superlative.change();
 		}
 	}
 }

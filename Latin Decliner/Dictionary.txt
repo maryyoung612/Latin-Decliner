@@ -1,178 +1,94 @@
-absentia absentiae absence
-aetas aetatis age
-ager agri field
-amor amoris love
-animus animi Spirit
-annus anni year
-aqua aquae water
-arma armorum weapons
-ars artis skill
-aurum auri gold
-beneficium beneficii service
-bellum belli war
-caelum caeli heavens
-caput capitis head
-carmen carminis song
-castrum castri camp
-casus casus accident
-causa causae cause
-consilium consilii plan
-coniunx coniugis spouse
-consul consulis consul
-copia copiae abundance
-corpus corporis body
-decus decoris beauty
-deus dei god
-dies diei day
-dolor doloris grief
-dominus domini lord
-domus domus house
-donum doni gift
-dux ducis leader
-eques equitis horseman
-equus equi horse
-exemplum exempli example
-exercitus exercitus army
-fama famae rumor
-fatum fati fate
-ferrum ferri iron
-fides fidei faith
-filius fili son
-finis finis boundary
-flamma flammae flame
-flumen fluminis river
-fortuna fortunae fortune
-frater fratris brother
-gens gentis family
-genus generis origin
-gloria gloriae glory
-gradus gradus step
-gratia gratiae favor
-homo hominis human
-honor honoris honor
-hora horae hour
-hostis hostis enemy
-ignis ignis fire
-imperium imperii command
-impetus impetus attack
-ingenium ingenii disposition
-iniuria iniuriae injustice
-ira irae anger
-iter itineris journey
-iugum iugi yoke
-ius iuris right
-iuvenis iuvenis youth
-kadamitas kadamitatis blight
-labor laboris toil
-lacrima lacrimae tear
-latus lateris side
-laus laudis praise
-legatus legati envoy
-legio legionis legion
-lex legis law
-litus litoris shore
-locus loci place
-lumen luminis light
-manus manus hand
-mare maeis sea
-mater matris mother
-mens mentis mind
-metus metus fear
-miles militis soldier
-modus modi measure
-mons montis mountain
-mors mortis death
-mos moris custom
-natura naturae nature
-natus nati son
-navis navis ship
-nemus nemoris grove
-nihil nil nothing
-nomen nominis name
-nox noctis night
-numen numinis deity
-numerus numeri number
-oculus oculi eye
-odium odii hatred
-officium officii service
-ops opis assistance
-oppidum oppidi town
-opus operis work
-orbis orbis circle
-ordo ordinis order
-os oris mouth
-parens parentis parent
-patria patriae fatherland
-pectus pectoris chest
-periculum periculi danger
-pes pedis foot
-poena poenae punishment
-populus populi people
-proelium proelii battle
-puella puellae girl
-puer pueri boy
-ratio rationis method
-regio regionis region
-regnum regni kingdom
-res rei thing 
-saxum saxi rock
-scelus sceleris crime
-sedes sedis seat
-senatus senatus senate
-sidus sideris star
-signum signi sign
-silva silvae forest
-sol solis sun
-spatium spatii space
-spes spei hope
-tectum tecti building
-telum teli weapon
-templum templi temple
-tempus temporis time
-tergum tergi back
-terra terrae earth
-timor timoris fear
-turba turbae crowd
-uliginosum uliginosi swamp
-ulna ulnae forearm
-ultio ultionis revenge
-ululatus ululatus howling
-ulva ulvae grass
-unda undae wave
-urceus urcei jug
-urina urinae urine
-utlagatus utlagati outlaw
-utriculus utriculi wineskin
-vacatio vacationis freedom
-vacca vaccae cow
-vadum vadi ford
-valles vallis valley
-vallum valli wall
-veritas veritatis truth
-vir viri man
-virgo virginis virgin
-vita vitae life
-vulnus vulneris wound
-wadiarius wadiarii security
-warantia warantiae warranty
-warantizatio warantizationis warranty
-warantus waranti warrantor
-warra warrae retaliation
-werra werrae retaliation
-wormacia wormaciae worms
-xeniolum xenioli gift
-xenophobia xenophobiae hatred
-xiphias xiphiae swordfish
-xvir xviri decemvir
-xylophonum xylophoni xylophone
-xysticus xystici athlete
-zabulus zabuli devil
-zaeta zaetae cabin
-zaeta zaetae diet
-zagon zagonis geometry
-zamia zamiae damage
-zea zeae grain
-zebra zebrae zebra
-zelotypia zelotypiae jealousy
-zelus zeli fervor
-zenodochium zenodochii guest-house
+absentia absentiae absence first f
+aetas aetatis age third f
+amor amoris love third m
+aqua aquae water first f
+aurum auri gold second n
+beneficium beneficii service second n
+bellum belli war second n
+caelum caeli heavens second n
+caput capitis head third n
+carmen carminis song third n
+castrum castri camp second n
+casus casus accident fourth m
+causa causae cause first f
+consilium consilii plan second n
+consul consulis consul third m
+copia copiae abundance first f 
+corpus corporis body third n
+decus decoris beauty third n
+deus dei god second m
+dolor doloris grief third m
+dominus domini lord second m
+domus domus house fourth f
+dux ducis leader third m
+equus equi horse second m
+fama famae rumor first f
+fatum fati fate second n
+fides fidei faith fifth f
+filius fili son second m
+flumen fluminis river third n
+fortuna fortunae fortune first f
+frater fratris brother third m
+gens gentis family third f
+gloria gloriae glory first f
+gratia gratiae favor first f
+homo hominis human third m
+honor honoris honor third m
+hora horae hour first f
+ignis ignis fire third m
+imperium imperii command second n
+iniuria iniuriae injustice first f
+ira irae anger first f
+iter itineris journey third n
+kadamitas kadamitatis blight third f
+labor laboris toil third m
+lacrima lacrimae tear first f
+laus laudis praise third f
+legio legionis legion third f
+litus litoris shore third n
+locus loci place second m
+lumen luminis light third n
+manus manus hand fourth f
+mare maeis sea third n
+mater matris mother third f
+natura naturae nature first f
+navis navis ship third f
+nomen nominis name third n
+oculus oculi eye second m
+odium odii hatred second n
+oppidum oppidi town second n
+orbis orbis circle third m
+patria patriae fatherland first f
+pectus pectoris chest third n
+periculum periculi danger second n
+poena poenae punishment first f
+populus populi people second m
+proelium proelii battle second n
+puella puellae girl first f
+regio regionis region third f
+regnum regni kingdom second n
+saxum saxi rock second n
+signum signi sign second n
+silva silvae forest first f
+spatium spatii space second n
+spes spei hope fifth f
+telum teli weapon second n
+templum templi temple second n
+tempus temporis time third n
+terra terrae earth first f
+timor timoris fear third m
+ulna ulnae forearm first f
+ulva ulvae grass first f
+unda undae wave first f
+valles vallis valley third f
+vallum valli wall second n
+veritas veritatis truth third f
+virgo virginis virgin third f
+vita vitae life first f
+vulnus vulneris wound third n
+wormacia wormaciae worms first f
+xeniolum xenioli gift second n
+zabulus zabuli devil second m
+zamia zamiae damage first f
+zea zeae grain first f
+zebra zebrae zebra first f
